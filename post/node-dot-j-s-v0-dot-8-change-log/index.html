@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>노드 v0.8 API 변경 이력 |  Node.js Korea for Node Ninja</title>
+    <meta name="description" content="Node.js Ninja, Hacker 에 의해서 운영되는 노드 기술 공유 사이트입니다.">
+    <meta name="author" content="Rhio Kim">
+    <meta name="keywords" content="node.js,javascript,css3,html5,npm" />
+    <meta name="generator" content="haroopress v0.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/rss.xml" rel="alternate" title="Node.js Korea for Node Ninja" type="application/rss+xml">
+
+    <!-- Le styles -->
+    <link rel="canonical" href="http://nodejs.kr">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/markdown.css" rel="stylesheet">
+    <link href="/css/haroopress.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/code/default.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-64.png">
+
+    <!-- Le javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.jsonp.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/apps/github.js"></script>
+    <script src="/js/apps/twitter.js"></script>
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+        <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a class="pull-right" href="/rss.xml"><img src="/img/buttons/rss.png" /></a>
+          
+
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/archives">Archives</a>
+              </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container page-archive">
+    <div class="row">
+        <div class="span3">
+            <div id="author" class="well">
+                <div>
+                    <h3>About Author</h3>
+                    <ul class="thumbnails">
+                        <li>
+                            <a class="thumbnail">
+                                <img src="http://www.gravatar.com/avatar/0764d73c228492e36b339d8b6d7293ad?r=pg&amp;s=128.jpg&amp;d=identicon" />
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Rhio Kim</strong><br/>
+                        blog: <a href="http://nodejs.kr" target="_blank">http://nodejs.kr</a><br/>
+                        twitter: <a href="http://twitter.com/rhiokim" target="_blank">@rhiokim</a><br/>
+                        github: <a href="https://github.com/rhiokim" target="_blank">rhiokim</a>
+                    </p>
+                    <p>
+                        <a href="https://twitter.com/rhiokim" class="twitter-follow-button" data-show-count="true">Follow @rhiokim</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </p>
+                    <p>
+                        <p>JavaScript Hacker</p>
+                    </p>
+                </div>
+                <div>
+                    <h3>About this Article</h3>
+                    <p>
+                        <h5>Date Released:</h5>
+                        <span>Tuesday, June 26 2012 9:46 AM</span>
+                    </p>
+                </div>
+            </div>
+                        <div class="well">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Categories</li>
+                    <li class=""><a href="/category"><i class="icon-home"></i> Home</a></li>
+                    
+                    <li><a href="/category/news"><i class="icon-book"></i> news</a></li>
+                    
+                    <li><a href="/category/new"><i class="icon-book"></i> new</a></li>
+                    
+                    <li><a href="/category/node.js"><i class="icon-book"></i> node.js</a></li>
+                    
+                    <li><a href="/category/module"><i class="icon-book"></i> module</a></li>
+                    
+                </ul>
+            </div>
+
+            
+<div class="well">
+    <ul class="nav nav-list">
+        <li class="nav-header">Recent Articles</li>
+    
+        <li>
+            <a href="/post/nodeconf-2012-2day" target="_blank">NodeConf 2012 2 Day 요약
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/nodeconf-2012-1day" target="_blank">NodeConf 2012 1 Day 요약
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/top-10-dependency-modules" target="_blank">Top 10  Node Dependency modules
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/node-dot-j-s-v0-dot-6-gwa-v0-dot-8-yi-api-byeongyeongiryeog" target="_blank">Node.js v0.8 발표요약
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/node-dot-j-s-v0-dot-8-change-log" target="_blank">노드 v0.8 API 변경 이력
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+    </ul>
+</div>
+
+        </div>
+        <div class="span9">
+            <div class="row">
+                <div class="span9">
+                    <div class="well bg">
+                        
+                        <div class="page-header">
+                            <h1>노드 v0.8 API 변경 이력</h1>
+                        </div>
+
+                        
+    <div class="pull-right">
+        <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial" data-href="http://nodejs.kr/post/node-dot-j-s-v0-dot-8-change-log"></div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=246177242115486";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    </div>
+
+                                            
+                        <div class="pull-right">
+                            <!-- Place this tag where you want the +1 button to render -->
+                            <g:plusone href="/post/node-dot-j-s-v0-dot-8-change-log" size="medium"></g:plusone>
+
+                            <!-- Place this render call where appropriate -->
+                            <script type="text/javascript">
+                              (function() {
+                                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                po.src = 'https://apis.google.com/js/plusone.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                              })();
+                            </script>
+                        </div>
+                    
+
+                                            
+                        <div class="pull-right">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="노드 v0.8 API 변경 이력 -" data-url="http://nodejs.kr/post/node-dot-j-s-v0-dot-8-change-log" data-via="rhiokim">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </div>
+                    
+
+                        <div class="markdown-wrapper">
+                            <h2 id="toc_5">더 이상 지원하지 않는</h2>
+
+<ul>
+<li>http.Client()</li>
+<li>path {exists, existsSync} 는 fs {exists, existsSync} 로 변경되었습니다.</li>
+<li>tty.setRawMode (mode) 는 tty.ReadStream # setRawMode() (즉 process.stdin.setRawMode() )로 변경되었습니다.</li>
+<li>ev_ * 및 eio_ * 함수를 직접 사용하는 것은 권장하지 않습니다. 대신 libuv 가 제공하는 함수를 사용하십시오. </li>
+<li>eio<em>custom 에서 uv</em>queue_work 로 마이그레이션 방법은<a href="https://github.com/joyent/node/wiki/How-to-migrate-from-eio_custom-to-uv_queue_work">wiki 페이지</a> 를 참조하십시오.</li>
+</ul>
+
+<h2 id="toc_6">제거된</h2>
+
+<ul>
+<li>waf 빌드 시스템 - node.js 은 gyp 를 사용하게 되었습니다.
+
+<ul>
+<li>네이티브 모듈의 저자 경우 즉시 <a href="https://github.com/TooTallNate/node-gyp">node-gyp</a> 로 마이그레이션 하십시오!</li>
+</ul></li>
+<li><code>require (&#39;sys&#39;)</code> 는 예외를 throw 합니다. <code>require(&#39;util&#39;)</code> 를 사용하십시오. &quot;sys&quot;는 node v0.4에서 deprecated되었습니다.</li>
+<li><code>process.installPrefix</code> 삭제되었습니다. ( <a href="https://github.com/joyent/node/pull/3483">#3483</a> ) <code>process.installPrefix</code> 은 v0.6에서는 항상 <code>undefined</code> 입니다.</li>
+<li><code>node-vars</code> 삭제되었습니다 ( <a href="https://github.com/joyent/node/pull/3483">#3483</a> ) <code>node-vars</code> 는 v0.6에서는 항상 빈 문자열을 반환했습니다.</li>
+</ul>
+
+<blockquote>
+<p><a href="http://code.google.com/p/waf/">Waf</a> 는 python 기반의 메타 빌드 시스템으로 노드 네이티브 모듈을 빌드하기 위해서 사용되어 왔다.</p></blockquote>
+
+<h2 id="toc_7">변경된</h2>
+
+<ul>
+<li><p>process</p>
+<ul>
+<li>process.stdin.on(&#39;keypress&#39;) 내부 API에 기본적으로 생성되지 않습니다.</li>
+<li>process.stdin.pipe(dest) 가 자동으로 process.stdin.resume() 를 호출합니다.</li>
+</ul></li>
+<li><p>cluster</p>
+<ul>
+<li><code>cluster.fork()</code> 은 더 이상 <code>child_process.fork()</code> 가 반환한 개체를 반환하지 않습니다. 그것이 필요하면 <code>cluster.fork().process</code> 를 사용하십시오.</li>
+<li>cluster 개체 &#39;death&#39; 이벤트는 &#39;exit&#39; 로 변경되었습니다.</li>
+<li><code>kill()</code> 메서드는 <code>destroy()</code> 로 변경되었습니다.</li>
+<li><code>CLUSTER_WORKER_ID</code> 환경 변수 <code>CLUSTER_UNIQUE_ID</code> 로 변경되었습니다. 이것만 사용해야 하는 것은 아닙니다.</li>
+<li>worker는 마스터와의 연결이 문제로 인해 유실되면 자신을 종료합니다.</li>
+</ul></li>
+<li><p>http</p>
+<ul>
+<li><code>http.Server</code> 은 CONNECT 메소드를 요구하면 &#39;upgrade&#39; 이벤트가 아니라 &#39;connect&#39; 이벤트를 생성합니다.</li>
+<li><code>http.ServerResponse</code> 는 Date: 헤더를 기본적으로 보냅니다. 이것을 막으려면 response.sendDate 을 false 로 설정합니다.</li>
+<li><code>http.ClientRequest</code> 은 CONNECT 메소드에 대한 응답을 받으면 &#39;response&#39; 가 아니라 &#39;connect&#39; 이벤트를 생성합니다.</li>
+</ul></li>
+<li><p>child_process</p>
+<ul>
+<li>child_process.fork() 의 arguments 및 options 인자는 옵션되었습니다.</li>
+<li>자식 프로세스가 종료하면 &#39;exit&#39; 이벤트가 문제없이 생성됩니다. 이건 이전과는 달리 모든 표준 입출력이 닫히기까지 기다리지 않습니다.</li>
+<li>&#39;close&#39; 이벤트가 추가되었습니다. 그것은 자식 프로세스가 종료하고 모든 표준 입출력이 닫힐 때 생성됩니다.</li>
+</ul></li>
+<li><p>readline</p>
+<ul>
+<li>rl.createInterface() 의 인자는 rl.createInterface(options) 의 options 의 일부가 되었습니다. 그러나 이전 rl.createInterface(input, output, completer) 스타일도 사용할 수 있습니다.</li>
+</ul></li>
+<li><p>url</p>
+<ul>
+<li>url.parse() 는 IPv6 주소를 파싱하게 되었습니다.</li>
+<li>url.parse() 는 구분 기호를 버리는 것이 아니라 이스케이프 하도록 되었습니다.</li>
+<li>url.format() 는 auth 섹션을 이스케이프하게 되고 url.parse() 는 그것을 해독하게 되었습니다.</li>
+</ul></li>
+<li><p>fs</p>
+<ul>
+<li>path.exists() 및 path.existsSync() 가 fs.exists() 및 fs.existsSync() 에 있습니다.</li>
+<li>fs.symlink 의 type 인수 &#39;junction&#39; 를 지정할 수 있습니다 (Windows에만 해당).</li>
+<li>fs.realpath 및 fs.lstat 가 Windows에서 Unix처럼 작동하도록 합니다.</li>
+</ul></li>
+<li><p>console</p>
+<ul>
+<li>console.timeEnd 레이블이 없으면 예외를 throw하도록 합니다.</li>
+</ul></li>
+<li><p>buffer</p>
+<ul>
+<li>SlowBuffer 는 Buffer 를 상속하게 되었습니다. 이러한 프로토타입을 변경하는 모듈은 Buffer.prototype 에 적용하는 것만으로 충분합니다.</li>
+</ul></li>
+</ul>
+
+<h2 id="toc_8">추가된</h2>
+
+<ul>
+<li><p>buffer</p>
+<ul>
+<li>&#39;utf16le&#39; 인코딩.</li>
+</ul></li>
+<li><p>child_process</p>
+<ul>
+<li>child_process.fork() 의 <code>silent</code> 옵션 - stdout 및 stderr 를 부모 프로세스와 공유하지 않습니다.</li>
+<li>child_process.fork() 한 자식 프로세스. disconnect() 하여 자식 프로세스가 성공적으로 완료하게 됩니다.</li>
+<li>child_process.spawn() 의 <code>stdio</code> 옵션 - 자식 프로세스의 표준 입출력 (파일 디스크립터)를 구성할 수 있습니다.</li>
+<li>child_process.spawn() 의 <code>detached</code> 옵션 - 자식 프로세스 그룹 리더합니다 ( <a href="http://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options">문서</a> ).</li>
+<li>child.send() 는 net.Server 및 net.Socket 를 두번째 인자로 보낼 수 있습니다.</li>
+</ul></li>
+<li><p>cluster</p>
+<ul>
+<li>&#39;fork&#39;, &#39;online&#39;, &#39;listening&#39; 및 &#39;setup&#39; 이벤트.</li>
+<li>Worker 개체가 (마스터에서는) cluster.workers 또는 (작업자에서는) cluster.worker 로 제공되게 되었습니다.</li>
+<li>cluster.fork() 에 env 옵션 인자가 추가되었습니다.</li>
+<li>cluster.setupMaster() 및 cluster.settings.</li>
+<li>cluster.disconnect() 및 worker.disconnect().</li>
+<li>내부적으로 사용되었다 workerID 이 worker.id 로 추가되었습니다.</li>
+<li>worker.suicide 플래그가 설정되어 있으면, 작업자가 끊기거나 종료하거나 하면 의도하지 않은 종료로 보고됩니다.</li>
+</ul></li>
+<li><p>crypto</p>
+<ul>
+<li>crypto.getDiffieHellman()</li>
+<li>cipher.setAutoPadding() 및 decipher.setAutoPadding().</li>
+<li>crypto.createCredentials() 의 ciphers 옵션.</li>
+</ul></li>
+<li><p>domain</p>
+<ul>
+<li><a href="http://nodejs.org/api/domain.html">http://nodejs.org/api/domain.html</a>]를 참조하십시오.</li>
+</ul></li>
+<li><p>fs</p>
+<ul>
+<li>fs.appendFile() 및 fs.appendFileSync().</li>
+<li>wx, wx+, ax 및 ax+ 모드가 fs.open() 및 fs.openSync() 에 추가되었습니다.</li>
+</ul></li>
+<li><p>http</p>
+<ul>
+<li>server.close() 옵션 인자로 콜백 함수가 추가되었습니다.</li>
+<li>http.ServerResponse 의 sendDate 속성</li>
+<li>http.request() 및 http.get() 는 url.parse() 에 의해 해석되는 URL을 인자로 받을 수 있게 되었습니다.</li>
+</ul></li>
+<li><p>https</p>
+<ul>
+<li>https.request() 및 https.get() 에 ciphers 및 rejectUnauthorized 옵션이 추가되었습니다.</li>
+</ul></li>
+<li><p>net</p>
+<ul>
+<li>net.connect(options [connectionListener).</li>
+<li>server.close() 옵션 인수로 콜백 함수가 추가되었습니다.</li>
+<li>모든 파일 디스크립터의 수신을 방법 `server.listen({fd : someNumber}).</li>
+</ul></li>
+<li><p>process</p>
+<ul>
+<li>process.abort()</li>
+<li>process.hrtime() 나노(nano)초까지 지원하는 타이머.</li>
+</ul></li>
+<li><p>querystring</p>
+<ul>
+<li>querystring.parse(str, sep] [eq], [options]).</li>
+</ul></li>
+<li><p>stream</p>
+<ul>
+<li>setEncoding() 에 &#39;utf16le&#39; 및 &#39;ucs2&#39; 인코딩을 지정할 수 있습니다.</li>
+</ul></li>
+<li><p>tls</p>
+<ul>
+<li><a href="http://nodejs.org/api/tls.html#tls_client_initiated_renegotiation_attack_mitigation">세션 협상 공격을 막기</a> 위한 tls.CLIENT<em>RENEG</em>LIMIT 및 tls.CLIENT<em>RENEG</em>WINDOW.</li>
+<li>tls.connect(options [secureConnectionListener).</li>
+<li>tls.connect() 의 ciphers , rejectUnauthorized 및 socket 옵션.</li>
+<li>cleartextStream.getCipher() 는 공개 API가 되고 문서화되었습니다.</li>
+</ul></li>
+<li><p>zlib</p>
+<ul>
+<li>dictionary 옵션.</li>
+</ul></li>
+</ul>
+
+                        </div>
+                        <hr />
+                                            
+                        <div class="row-fluid">
+                            
+                            <div class="pull-right">
+                                <a href="/post/nodeconf-2012-1day" class="btn btn-inverse">NodeConf 2012 1 Day 요약 <i class="icon-white icon-chevron-right"></i></a>
+                            </div>
+                            
+
+                            
+                            <div class="pull-left">
+                                <a href="/post/node-dot-j-s-v0-dot-6-gwa-v0-dot-8-yi-api-byeongyeongiryeog" class="btn btn-inverse"><i class="icon-white icon-chevron-left"></i> Node.js v0.8 발표요약</a>
+                            </div>
+                            
+                        </div>
+                    
+
+
+                        <div class="row-fluid">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nodekr'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <!--<div class="row">-->
+        <!--<div class="offset3 span9">-->
+            <!--<strong>tags</strong> :-->
+            <!---->
+        <!--</div>-->
+    <!--</div>-->
+</div><!-- /container -->
+
+
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span12 ">
+                    <div class="well">
+                        <p class="pull-right"><a href="#">Back to top</a></p>
+                            Contact <a href="mailto:rhio.kim@gmail.com">rhio.kim@gmail.com</a><br/>
+                            Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-30492002-1']);
+            _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+    
+</body>
+</html>

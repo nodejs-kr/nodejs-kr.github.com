@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NodeConf 2012 2 Day 요약 |  Node.js Korea for Node Ninja</title>
+    <meta name="description" content="Node.js Ninja, Hacker 에 의해서 운영되는 노드 기술 공유 사이트입니다.">
+    <meta name="author" content="Rhio Kim">
+    <meta name="keywords" content="node.js,javascript,css3,html5,npm" />
+    <meta name="generator" content="haroopress v0.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/rss.xml" rel="alternate" title="Node.js Korea for Node Ninja" type="application/rss+xml">
+
+    <!-- Le styles -->
+    <link rel="canonical" href="http://nodejs.kr">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/markdown.css" rel="stylesheet">
+    <link href="/css/haroopress.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/code/default.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-64.png">
+
+    <!-- Le javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.jsonp.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/apps/github.js"></script>
+    <script src="/js/apps/twitter.js"></script>
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+        <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a class="pull-right" href="/rss.xml"><img src="/img/buttons/rss.png" /></a>
+          
+
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/archives">Archives</a>
+              </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container page-archive">
+    <div class="row">
+        <div class="span3">
+            <div id="author" class="well">
+                <div>
+                    <h3>About Author</h3>
+                    <ul class="thumbnails">
+                        <li>
+                            <a class="thumbnail">
+                                <img src="http://www.gravatar.com/avatar/0764d73c228492e36b339d8b6d7293ad?r=pg&amp;s=128.jpg&amp;d=identicon" />
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Rhio Kim</strong><br/>
+                        blog: <a href="http://nodejs.kr" target="_blank">http://nodejs.kr</a><br/>
+                        twitter: <a href="http://twitter.com/rhiokim" target="_blank">@rhiokim</a><br/>
+                        github: <a href="https://github.com/rhiokim" target="_blank">rhiokim</a>
+                    </p>
+                    <p>
+                        <a href="https://twitter.com/rhiokim" class="twitter-follow-button" data-show-count="true">Follow @rhiokim</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </p>
+                    <p>
+                        <p>JavaScript Hacker</p>
+                    </p>
+                </div>
+                <div>
+                    <h3>About this Article</h3>
+                    <p>
+                        <h5>Date Released:</h5>
+                        <span>Friday, July 6 2012 10:50 AM</span>
+                    </p>
+                </div>
+            </div>
+                        <div class="well">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Categories</li>
+                    <li class=""><a href="/category"><i class="icon-home"></i> Home</a></li>
+                    
+                    <li><a href="/category/news"><i class="icon-book"></i> news</a></li>
+                    
+                    <li><a href="/category/new"><i class="icon-book"></i> new</a></li>
+                    
+                    <li><a href="/category/node.js"><i class="icon-book"></i> node.js</a></li>
+                    
+                    <li><a href="/category/module"><i class="icon-book"></i> module</a></li>
+                    
+                </ul>
+            </div>
+
+            
+<div class="well">
+    <ul class="nav nav-list">
+        <li class="nav-header">Recent Articles</li>
+    
+        <li>
+            <a href="/post/nodeconf-2012-2day" target="_blank">NodeConf 2012 2 Day 요약
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/nodeconf-2012-1day" target="_blank">NodeConf 2012 1 Day 요약
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/top-10-dependency-modules" target="_blank">Top 10  Node Dependency modules
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/node-dot-j-s-v0-dot-6-gwa-v0-dot-8-yi-api-byeongyeongiryeog" target="_blank">Node.js v0.8 발표요약
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/node-dot-j-s-v0-dot-8-change-log" target="_blank">노드 v0.8 API 변경 이력
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+    </ul>
+</div>
+
+        </div>
+        <div class="span9">
+            <div class="row">
+                <div class="span9">
+                    <div class="well bg">
+                        <div class="pull-right bookmark"></div>
+                        <div class="page-header">
+                            <h1>NodeConf 2012 2 Day 요약</h1>
+                        </div>
+
+                        
+    <div class="pull-right">
+        <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial" data-href="http://nodejs.kr/post/nodeconf-2012-2day"></div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=246177242115486";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    </div>
+
+                                            
+                        <div class="pull-right">
+                            <!-- Place this tag where you want the +1 button to render -->
+                            <g:plusone href="/post/nodeconf-2012-2day" size="medium"></g:plusone>
+
+                            <!-- Place this render call where appropriate -->
+                            <script type="text/javascript">
+                              (function() {
+                                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                po.src = 'https://apis.google.com/js/plusone.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                              })();
+                            </script>
+                        </div>
+                    
+
+                                            
+                        <div class="pull-right">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="NodeConf 2012 2 Day 요약 -" data-url="http://nodejs.kr/post/nodeconf-2012-2day" data-via="rhiokim">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </div>
+                    
+
+                        <div class="markdown-wrapper">
+                            <p>리오: &quot;아직 공유되지 않는 발표자료가 있어 정리되지 않는 부분도 있습니다.
+공유되는 데로 업데이트할 예정입니다.&quot;</p>
+<h2 id="toc_35">DTrace, Node.js, and Flame Graphs</h2>
+
+<ul>
+<li>발표자 : <a href="https://twitter.com/#!/dapsays">Dave Pacheco</a></li>
+<li>발표자료 : <a href="http://dtrace.org/blogs/dap/files/2012/07/nodeconf.pdf">PDF</a></li>
+</ul>
+<p>Dave Pacheco 는 Joyent 사의 소프트웨어 엔지니어로 있으며 최근까지 프로덕션 레벨의 노드를 위한 런타임 프로파일링과 postmortem 디버깅 도구를 구축하였고 노드의 모듈 의존성을 해결하기 위한 shrinkwrap 패키지 관리 구조를 만들었습니다.</p><p>이 발표에서는 DTrace 를 이용한 프로덕션 레벨의 노드 프로파일링에 대해 이야기를 하고 있습니다.  이 발표는 지난 4월에 블로그에 작성한 <a href="http://dtrace.org/blogs/dap/2012/04/25/profiling-node-js/">노드 프로파일링의 내용</a>을 자세히 소개하고 있습니다.</p>
+<blockquote>
+<p><a href="http://en.wikipedia.org/wiki/DTrace">DTrace(Dynamic Trace : 동적 추적)</a>은 썬 마이크로 시스템즈가 개발한 솔라리스 100 및 OpenSolaris, Mac OS X, FreeBSD 에 탑재된 로우레벨 단에서의 시스템 정보를 추적하는 기능입니다. 또한 프로세스내에서 특정 함수가 호출되면서 전달되는 인수와 그에 대한 로그, 특정 파일에 액세스 하는 프로세스의 목록과 같은 보다 세밀한 정보를 추적할 수 있습니다. 노드에서는 Dtrace 를 사용하여 노드 프로세스의 메모리 사용량, CPU 타임, 파일시스템, 네트워크 리소스등의 정보를 수집하고 콜 스택의 트레이싱을 완벽에 가깝게 분석할 수 있는 유용한 도구이다.</p></blockquote>
+
+<h2 id="toc_36">Fast Binary Stream Parsing</h2>
+
+<ul>
+<li>발표자 : <a href="http://twitter.com/felixge">Felix Geisendörfer</a></li>
+<li>발표자료 : </li>
+</ul>
+<p>Felix 는 transloadit.com 의 공동 설립자이고 노드 코어 커미터입니다. 그외 <a href="http://nodeguide.com/index.html">Felix&#39;s Node.js Guide</a> 로도 잘 알려져 있습니다.</p>
+<h2 id="toc_37">Memory Leaks. So What?</h2>
+
+<ul>
+<li>발표자 : <a href="https://twitter.com/#!/drainmice">Jed Parsons</a></li>
+<li>발표자료 : <a href="http://jedp.github.com/node-memwatch-demo/">Web</a></li>
+</ul>
+<p>Jed Parsons 는 노드계에서는 잘 알려지지 않았는데 이번 컨퍼런스에서 메모리 릭 디텍터와 힙 메모리 비교할 수 있는 <a href="https://github.com/lloyd/node-memwatch">모듈</a>을 통해 메모리 누수를 파악하고 해결하기 위한 방법을 소개합니다.</p><p>리오: &#39;프리젠테이션 정말 개발자스럽네요.&#39;</p>
+<h2 id="toc_38">Node Streams</h2>
+
+<ul>
+<li>발표자 : <a href="https://twitter.com/#!/polotek">Marco Rogers</a></li>
+<li>발표자료 : <a href="https://github.com/polotek/nodeconf-2012-streams-talk">Github</a></li>
+</ul>
+<p>Marco Rogers 는 야머 자바스크립트 엔지니어로 노드에서 쉘 스크립트를 통한 I/O 조작을 손쉽게 하기 위한 <a href="https://github.com/polotek/procstreams">procstreams</a> 모듈과 노드를 위한 <a href="https://github.com/polotek/libxmljs">xml</a> 라이브러리 바인딩 모듈 개발자입니다. </p><p>이 발표에서는 Collector, LogStream, FileLogStream, GZipStream 등의 예제를 통해 노드의 스트림의 특징과 효율적인 사용에 대해서 다루고 있습니다. </p>
+<h2 id="toc_39">Porting Node</h2>
+
+<ul>
+<li>발표자 : <a href="http://twitter.com/creationix">Tim Caswell</a></li>
+<li>발표자료 : <a href="https://github.com/creationix/nodeconf2012">Github</a></li>
+</ul>
+<p>Tim Caswell 은 howtonode.org 운영자이며 NVM(node version manager) 와 step 이라는 control flow 모듈을 개발한 노드계의 슈퍼 개발자입니다. 첫째날 libuv 에 대해 발표한 bert belder 와 같이 Cloud9 IDE 엔지니어입니다.</p><p>최근 노드를 루아(Lua) 로 포팅하면서 얻은 경험을 공유하고 있으며 Github 에 그 내용을 공유하고 있습니다. 노드가 새로운 프로그래밍으로 포딩되는 것은 노드가 갖는 기술적인 아키텍쳐와 특징이 앞으로 중요하기 때문이라고 예측해 볼 수 있습니다.</p>
+<h2 id="toc_40">Streams at Scale</h2>
+
+<ul>
+<li>발표자 : <a href="http://twitter.com/mranney">Matt Ranney</a></li>
+<li>발표자료 :</li>
+</ul>
+<p>Matt 는 Voxer CTO 이며 노드 초창기에 HTTP 구현에 커미터로 활동하였습니다.  뿐만아니라 패킷 캡쳐 라이브러리인 pcap 을 노드로 바인딩한 <a href="https://github.com/mranney/node_pcap">node_pcap</a> 모듈과 redis 클라이언트인 <a href="https://github.com/mranney/node_redis">node_redis</a> 모듈도 개발하였다.</p>
+<h2 id="toc_41">You&#39;ve got a memory leak</h2>
+
+<ul>
+<li>발표자 : <a href="http://twitter.com/antiserf">Danny Coates</a></li>
+<li>발표자료 :</li>
+</ul>
+<p>Danny 는 Voxer 의 엔지니어로 v8 과 WebInspector 를 기반한 노드 디버깅 툴인 <a href="https://github.com/dannycoates/node-inspector">node-inspector</a> 개발자입니다. </p><p>이번 발표에서는 노드의 메모리와 CPU 프로파일링을 통해 메모리릭을 효율적으로 대응하기 위한 노하우에 대해서 다루고 있습니다.</p>
+<h4 id="toc_42">함께보세요.</h4>
+
+<ul>
+<li><a href="http://howtonode.org/debugging-with-node-inspector">http://howtonode.org/debugging-with-node-inspector</a></li>
+</ul>
+
+<h2 id="toc_43">JavaScript Arduino Programming</h2>
+
+<ul>
+<li>발표자 : <a href="http://">Rick Waldron</a></li>
+<li>발표자료 : <a href="https://dl.dropbox.com/u/3531958/nodeconf/index.html#/">Web</a>]</li>
+</ul>
+<p>Rick Waldron 는 자바스크립트 에반젤리스트로 bocoup.com 에서 근무하고 있습니다. 최근 노드를 이용한 Ardunio 프로젝트들에 영감을 얻어 노드와 가속계, 버튼, LED, 조이스틱, 모터, 광센서, 조사각 센서, 위치제어 등을 조합해 로봇 <a href="http://www.johnny-five.com/">johnny-five</a> 제어를 시연하였습니다.</p>
+<h2 id="toc_44">Node and SPI</h2>
+
+<ul>
+<li>발표자 : <a href="http://twitter.com/russellhay">@russellhay</a>]</li>
+<li>발표자료 : <a href="https://www.dropbox.com/s/ff2k39ul5bs29e2/Node%20and%20SPI%20%28nodeconf2012%29.pdf">PDF</a></li>
+</ul>
+<p>Russell Hay 는 소프트웨어 메니저와 테스트 엔지니어링 전문가로 Tableau Software 에 근무하고 있습니다. 노드의 serialport 모듈에 영감을 얻어 모토로라에 의해 개발된 전이중(full duplex) 통신이 가능한 동기 통신 규격인 <a href="http://ko.wikipedia.org/wiki/%EC%A7%81%EB%A0%AC_%EC%A3%BC%EB%B3%80%EA%B8%B0%EA%B8%B0_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4_%EB%B2%84%EC%8A%A4">직렬 주변기기 인터페이스 버스(Serial Peripheral Interface Bus)</a>를 노드로 구현하였습니다. node-spi 모듈은 두개의 주변 장치간에 직렬 통신으로 테이터를 교환할 수 있게 해준다.</p><p>이 발표에서는 모듈을 구현하기 위한 기술과 모듈의 API, 로드맵에 대해서 소개하고 있습니다.</p><p>SPI Bus 를 이용해 컨트롤할 수 있는 장치들에는 다음과 같은 것들이 있습니다.</p>
+<ul>
+<li>EEPROM</li>
+<li>I/O Extenders</li>
+<li>Motor Controllers</li>
+<li>LED Drivers</li>
+<li>ADC</li>
+<li>Sensors of all kinds</li>
+<li>Voice Record and Playback</li>
+<li>DSP</li>
+<li>Touchscreens</li>
+</ul>
+
+<h2 id="toc_45">Node [point] JS &amp; Black Box Prototyping</h2>
+
+<ul>
+<li>발표자 : <a href="http://twitter.com/nexxylove">Emily Rose</a></li>
+<li>발표자료 : <a href="https://docs.google.com/presentation/d/1m1MiyNffoqeYQMLrtqnY990kJdfaPKhtyEXh5MQ6rC0/edit?pli=1#slide=id.g14c70e36_0_0">Google Doc</a></li>
+</ul>
+<p>이 발표에서는 노드를 이용한 하드웨어 컨트롤을 위한 마이크로 컨트롤러의 구조, 스케치, 트리거링에 대한 이야기를 다루고 있습니다. 이미 국외에서는 제품화하여 판매할 수준의 제품들도 몇몇 있습니다. 국내에서도 몇몇 개발자들에 의해서 노드를 이용한 아두이노 토이 프로젝트들이 공개되어 있습니다.</p>
+<ul>
+<li><a href="https://github.com/nexxy/orobos-vine">데모소스</a></li>
+</ul>
+
+<h2 id="toc_46">tmpad</h2>
+<p>발표자 : <a href="http://twitter.com/tmpvar">Elijah Insua</a>
+발표자료 : <a href="http://tmpvar.com/nodeconf-2012/assets/fallback/index.html">Web</a></p><p>이 발표에서는 하드웨어 세션으로 노드와 아두이노를 이용해 MIDI 플레이를 위한 전자 악기의 일종인 tmpad 를 제작한 전 과정에 대해서 소개합니다.  개인적으로 제작 과정중 터치의 민감도를 적외선(IR) 터치스크린으로 처리한 것이 아이디어인 것 같다는 생각을 합니다.</p><p>그냥 압력 센서를 사용했다면 눌러서는 소리의 강도를 표현하기 어려워 단조로운 음밖에는 표현 못할꺼라 생각했지만 적외선 센서를 이용함으로 누르는 강도와 표면적에 따라서 음을 자유자재로 표현할 수 있다는 것은 괜찮은 아이디어네요.</p><p>아무튼 노드와 아두이노는 재미있고 아이디어 넘쳐나게 하는 녀석들입니다. 물론 재미요소 말고도 소프트웨어 분야 개발자들도 큰 가치를 만들 수 있게 해주죠.</p><p><img src="http://www.tmpvar.com/project/tmpad/static/img/revision4-500.jpg" alt="image"> </p>
+<h4 id="toc_47">함께보세요.</h4>
+
+<ul>
+<li><a href="http://www.tmpvar.com/project/tmpad/">http://www.tmpvar.com/project/tmpad/</a></li>
+</ul>
+
+<h2 id="toc_48">References</h2>
+
+<ul>
+<li><a href="http://lanyrd.com/2012/nodeconf/">http://lanyrd.com/2012/nodeconf/</a></li>
+<li><a href="http://www.davetech.com/blog/">http://www.davetech.com/blog/</a></li>
+<li><a href="http://jeditoolkit.com/2012/07/05/nodeconf-2012.html#post">http://jeditoolkit.com/2012/07/05/nodeconf-2012.html#post</a></li>
+<li><a href="https://gist.github.com/3048132">https://gist.github.com/3048132</a></li>
+</ul>
+
+<blockquote>
+<p>NodeConf 2012 다녀온 #octoberskyjs 분들이 랩업 세미나를 한다고 하니 기대해봐야겠네요.</p></blockquote>
+
+                        </div>
+                        <hr />
+                                            
+                        <div class="row-fluid">
+                            
+                            <div class="pull-right">
+                                <a href="/post/top-10-dependency-modules" class="btn btn-inverse">Top 10  Node Dependency modules <i class="icon-white icon-chevron-right"></i></a>
+                            </div>
+                            
+
+                            
+                            <div class="pull-left">
+                                <a href="/post/nodeconf-2012-1day" class="btn btn-inverse"><i class="icon-white icon-chevron-left"></i> NodeConf 2012 1 Day 요약</a>
+                            </div>
+                            
+                        </div>
+                    
+
+
+                        <div class="row-fluid">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nodekr'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <!--<div class="row">-->
+        <!--<div class="offset3 span9">-->
+            <!--<strong>tags</strong> :-->
+            <!---->
+        <!--</div>-->
+    <!--</div>-->
+</div><!-- /container -->
+
+
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span12 ">
+                    <div class="well">
+                        <p class="pull-right"><a href="#">Back to top</a></p>
+                            Contact <a href="mailto:rhio.kim@gmail.com">rhio.kim@gmail.com</a><br/>
+                            Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-30492002-1']);
+            _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+    
+</body>
+</html>

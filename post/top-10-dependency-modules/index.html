@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Top 10  Node Dependency modules |  Node.js Korea for Node Ninja</title>
+    <meta name="description" content="Node.js Ninja, Hacker 에 의해서 운영되는 노드 기술 공유 사이트입니다.">
+    <meta name="author" content="Rhio Kim">
+    <meta name="keywords" content="node.js,javascript,css3,html5,npm" />
+    <meta name="generator" content="haroopress v0.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/rss.xml" rel="alternate" title="Node.js Korea for Node Ninja" type="application/rss+xml">
+
+    <!-- Le styles -->
+    <link rel="canonical" href="http://nodejs.kr">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/markdown.css" rel="stylesheet">
+    <link href="/css/haroopress.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/code/default.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-64.png">
+
+    <!-- Le javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.jsonp.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/apps/github.js"></script>
+    <script src="/js/apps/twitter.js"></script>
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+        <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a class="pull-right" href="/rss.xml"><img src="/img/buttons/rss.png" /></a>
+          
+
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/archives">Archives</a>
+              </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container page-archive">
+    <div class="row">
+        <div class="span3">
+            <div id="author" class="well">
+                <div>
+                    <h3>About Author</h3>
+                    <ul class="thumbnails">
+                        <li>
+                            <a class="thumbnail">
+                                <img src="http://www.gravatar.com/avatar/0764d73c228492e36b339d8b6d7293ad?r=pg&amp;s=128.jpg&amp;d=identicon" />
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Rhio Kim</strong><br/>
+                        blog: <a href="http://nodejs.kr" target="_blank">http://nodejs.kr</a><br/>
+                        twitter: <a href="http://twitter.com/rhiokim" target="_blank">@rhiokim</a><br/>
+                        github: <a href="https://github.com/rhiokim" target="_blank">rhiokim</a>
+                    </p>
+                    <p>
+                        <a href="https://twitter.com/rhiokim" class="twitter-follow-button" data-show-count="true">Follow @rhiokim</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </p>
+                    <p>
+                        <p>JavaScript Hacker</p>
+                    </p>
+                </div>
+                <div>
+                    <h3>About this Article</h3>
+                    <p>
+                        <h5>Date Released:</h5>
+                        <span>Wednesday, June 27 2012 11:49 AM</span>
+                    </p>
+                </div>
+            </div>
+                        <div class="well">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Categories</li>
+                    <li class=""><a href="/category"><i class="icon-home"></i> Home</a></li>
+                    
+                    <li><a href="/category/news"><i class="icon-book"></i> news</a></li>
+                    
+                    <li><a href="/category/new"><i class="icon-book"></i> new</a></li>
+                    
+                    <li><a href="/category/node.js"><i class="icon-book"></i> node.js</a></li>
+                    
+                    <li><a href="/category/module"><i class="icon-book"></i> module</a></li>
+                    
+                </ul>
+            </div>
+
+            
+<div class="well">
+    <ul class="nav nav-list">
+        <li class="nav-header">Recent Articles</li>
+    
+        <li>
+            <a href="/post/nodeconf-2012-2day" target="_blank">NodeConf 2012 2 Day 요약
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/nodeconf-2012-1day" target="_blank">NodeConf 2012 1 Day 요약
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/top-10-dependency-modules" target="_blank">Top 10  Node Dependency modules
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/node-dot-j-s-v0-dot-6-gwa-v0-dot-8-yi-api-byeongyeongiryeog" target="_blank">Node.js v0.8 발표요약
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+        <li>
+            <a href="/post/node-dot-j-s-v0-dot-8-change-log" target="_blank">노드 v0.8 API 변경 이력
+            <span class="label">Rhio Kim</span></a>
+        </li>
+    
+    </ul>
+</div>
+
+        </div>
+        <div class="span9">
+            <div class="row">
+                <div class="span9">
+                    <div class="well bg">
+                        
+                        <div class="page-header">
+                            <h1>Top 10  Node Dependency modules</h1>
+                        </div>
+
+                        
+    <div class="pull-right">
+        <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial" data-href="http://nodejs.kr/post/top-10-dependency-modules"></div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=246177242115486";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    </div>
+
+                                            
+                        <div class="pull-right">
+                            <!-- Place this tag where you want the +1 button to render -->
+                            <g:plusone href="/post/top-10-dependency-modules" size="medium"></g:plusone>
+
+                            <!-- Place this render call where appropriate -->
+                            <script type="text/javascript">
+                              (function() {
+                                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                po.src = 'https://apis.google.com/js/plusone.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                              })();
+                            </script>
+                        </div>
+                    
+
+                                            
+                        <div class="pull-right">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Top 10  Node Dependency modules -" data-url="http://nodejs.kr/post/top-10-dependency-modules" data-via="rhiokim">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </div>
+                    
+
+                        <div class="markdown-wrapper">
+                            <p>노드에서 모듈은 굉장히 중요한 역할을 하고 NPM은 에코 시스템으로 노드가 탄생한 이후 노드 플랫폼의 성장에 가장 큰 영향을 주었습니다.  다른 오픈 소스 프로젝트에 비해 급속도로 발전하였고 이 글을 작성하는 시점에서 노드 모듈은 114,000 여개가 등록되고 있습니다.</p><p>잘 만들어진 모듈든은 노드 프로젝트에서 굉장히 유용하게 사용되고 또한 새로운 모듈을 만드는데 중요한 역할을 하는 모듈들이 굉장히 많습니다.
+이 글에서는 모듈의 의존성이 가장 높은 Top 10 에 대한 소개를 합니다.</p><p>(아래 모듈 의존성 정보는 글을 작성하는 시점을 기준으로 하기 때문에 언제든지 변할 수 있습니다.  정확한 정보는 <a href="http://search.npmjs.org/#/_browse/deps">여기</a> 에서 확인하세요.)</p>
+<h3 id="toc_50">underscore</h3>
+<p><img src="./@img/underscore.png" alt="underscore"></p>
+<ul>
+<li>의존성 : 1035</li>
+<li>사이트 :  <a href="http://documentcloud.github.com/underscore/">http://documentcloud.github.com/underscore/</a></li>
+<li>소개 : underscore 는 자바스크립트 MVC 프레임웍으로 잘 알려진 백본(backbone.js) 의 코어 라이브러리입니다. 객체 지향 자바스크립트를 위한 핵심중의 핵심만을 잘 추려 구현되어 노드에서 뿐만아니라 클라이언트측 자바스크립트 라이브러리로도 굉장히 잘 알려져 있습니다.<br></li>
+</ul>
+
+<h3 id="toc_51">coffee-script</h3>
+<p><img src="./@img/coffeescript.png" alt="coffeescript"></p>
+<ul>
+<li>의존성 : 669</li>
+<li>사이트 : <a href="http://coffeescript.org/">http://coffeescript.org/</a></li>
+<li>소개 : 커피스크립트는 차세대 자바스크립트에 가장 큰 영향을 준 트랜스 컴파일 언어로 자바스크립트에서 루비 표현식을 사용할 수 있도록 해주는 스크립트 언어입니다.  이 언어는 특히 서버측 자바스크립트인 노드가 이슈화되면서 서버측 언어인 루비 개발자들에 의해서 큰 학습 요소없이 노드 플랫폼을 이용할 수 있게되면서 크게 인기를 끌면서 세계적으로 이슈가 되었고 노드 모듈도 루비 개발자들에 의해서 많들어 지고 있는 모듈이 그만큼 많다는 의미도 찾아 볼 수 있습니다.</li>
+</ul>
+
+<h3 id="toc_52">request</h3>
+
+<ul>
+<li>의존성 : 586</li>
+<li>사이트 : <a href="https://github.com/mikeal/request">https://github.com/mikeal/request</a></li>
+<li>소개 : nodeconf 컨퍼런스를 만든 mekeal 에 의해서 만들어진 심플한 HTTP 요청 모듈로 브라우저에서 특정 URL 로 요청하듯이 HTTP 요청을 자유자재로 조작하여 만들 수 있는 웹 애플리케이션 구축 시 필수적이며 유용한 모듈입니다. 예를 들어 oAuth 인증이 필요한 기능에서도 request 모듈을 통해 브라우저에서 oAuth 인증 절차를 손쉽게 흉내낼 수 있게 됩니다.( 근데 high 클래스 oAuth 인증 모듈도 이미 많이 있습니다. )</li>
+</ul>
+
+<h3 id="toc_53">async</h3>
+
+<ul>
+<li>의존성 : 558</li>
+<li>사이트 : <a href="https://github.com/caolan/async/">https://github.com/caolan/async/</a></li>
+<li>소개 : 이 모듈은 그간 서버에서는 대부분의 절차적 프로그래밍이 주를 이뤘으나 자바스크립트의 비절차적인 비동기 이벤트 모델의 특징이 노드와 함께 서버로 넘어오면서 많은 이슈와 논의가 있었습니다.  이 이슈를 해소하기 위한 모듈입니다. </li>
+</ul>
+
+<h3 id="toc_54">express</h3>
+
+<ul>
+<li>의존성 : 518</li>
+<li>사이트 : <a href="http://expressjs.com/">http://expressjs.com/</a></li>
+<li>소개 : 이것은 모듈이라고 하기보다 프레임워크입니다. 웹 애플리케이션 구축을 위한 high 클래스 API 들을 제공함으로써 이름에 걸맞게 빠른 웹 애플리케이션 구축에 필수적인 요소라 할 수 있습니다. express.js 는 Ruby 의 <a href="http://www.sinatrarb.com/">sinatra</a> 프레임워크의 영향을 받아 그 구조와 특징이 매우 유사합니다.</li>
+</ul>
+
+<h3 id="toc_55">optimist</h3>
+
+<ul>
+<li>의존성 : 494</li>
+<li>사이트 : <a href="https://github.com/substack/node-optimist">https://github.com/substack/node-optimist</a></li>
+<li>소개 : 노드는 서버측에서 파이썬, 루비, 펄 등과 같이 CLI(Command Line Interface) 를 제공하여 쉘 스크립트로도 사용됩니다.  옵티미스트는 콘솔에서 수행되는 명령행 옵션을 코드에서 손쉽게 접근할 수 있도록 파싱해주는 유용한 모듈입니다. (예를 들어 <code>$ node_script.js -x 10 -y 15</code> 라면 <code>node_script.js</code> 내부에서는 <code>{ x: 10, y: 15 }</code> 형태로 손쉽게 접근할 수 있게 됩니다.) </li>
+</ul>
+
+<h3 id="toc_56">colors</h3>
+
+<ul>
+<li>의존성 : 351</li>
+<li>사이트 : <a href="https://github.com/Marak/colors.js">https://github.com/Marak/colors.js</a></li>
+<li>소개 : 이 모듈은 옵티미스트와 동일하게 콘솔상에 처리를 위한 유틸성 모듈로 출력되는 텍스트의 색상을 손쉽게 설정할 수 있도록 해줍니다.</li>
+</ul>
+
+<h3 id="toc_57">connect</h3>
+
+<ul>
+<li>의존성 : 321</li>
+<li>사이트 : <a href="https://github.com/senchalabs/connect">https://github.com/senchalabs/connect</a></li>
+<li>소개 : 이 모듈은 Sencha Lab 에서 개발한 HTTP 를 확장한 서버 프레임워크를 입니다.  노드 서버를 구현하기 위한 20 여개의 미들웨어(로깅, 세션, 쿠키, 멀티파트, 압축, 가상호스트, 서브도메인 등)가 탑재되어 있습니다. 이 모듈은 express.js 에서도 기본 모듈로 사용되고 있기 때문에 실상 express.js 가 갖은 의존성 만큼 connect 모듈의 의존성도 높다고 할 수 있습니다.  만약 HTTP 서버의 동작 원리를 이해하고 싶다면 이 모듈을 분석해보는 것도 좋습니다. </li>
+</ul>
+
+<h3 id="toc_58">commander</h3>
+
+<ul>
+<li>의존성 : 315</li>
+<li>사이트 : <a href="https://github.com/visionmedia/commander.js">https://github.com/visionmedia/commander.js</a></li>
+<li>소개 : 이 모듈은 optimist 와 동일한 역할을 하는 모듈로 노드계의 슈퍼 커미터인 visionmedia 의 <a href="http://tjholowaychuk.com/">TJ Holowaychuk</a> 가 루비의 <a href="https://github.com/visionmedia/commander">commander</a>에 를 노드 버젼으로 포팅한 것입니다.</li>
+</ul>
+
+<h3 id="toc_59">uglify-js</h3>
+
+<ul>
+<li>의존성 : 304</li>
+<li>사이트 : <a href="https://github.com/mishoo/UglifyJS/">https://github.com/mishoo/UglifyJS/</a>]</li>
+<li>소개 : 본래 uglify-js 는 커뮤니티에 의해 클라이언트 측 자바스크립트 압축을 위한 도구로 만들어진 라이브러리입니다. 이 모듈은 단순히 압축뿐만 아니라 압축된 자바스크립트를 보기 좋게 출력하기 위한 용도와 AST(Abstract Syntax tree) 분석을 위한 도구로도 활용됩니다.</li>
+</ul>
+
+<h2 id="toc_60">요약</h2>
+<p>의존성 탑 모듈들을 살펴보면 참 재미있는 사실을 발견할 수 있습니다. (노드에 관심있는 개발자만 재미있을 수도 있음)</p><p>1위를 하고 있는 underscore 모듈은 브라우저에서 UI 개발에서 사용되던 prototype.js, jquery, extjs core 들과 그 용도가 같습니다. 그런데 서버측에서도 인기가 만만치 않습니다.  2위를 차지한 모듈은 자바스크립트라고 하기보다 루비 구문을 자바스크립에서 사용할 수 있는 트랜스 파일링되는 언어입니다.  3위를 차지한 모듈은 Ajax 에 의존해 오던 자바스크립트가 HTTP 프로토콜을 이용해 저레벨 요청을 제어할 수 있게 해줍니다. 4위를 차지한 async 모듈은 자바스크립트의 특징 중 비동기 절차를 절차 지향으로 변환해주는 녀석입니다. 마지막 5위를 차지한 express.js 는 서버 프레임워크로 웹 서비스를 구축하는데 동일한 언어로 동형의 프로그래밍(Isomorphic Programming) 이 가능하도록 하였습니다.</p><p>이런 모듈의 아이디어를 보면 서버측의 사상은 물론이고 브라우저 영역의 기술과 아이디어를 그대로 활용할 수 있기 때문에 다른 서버측 언어들에 비해 톡톡 튀는 아이디어가 많을 수 밖에 없습니다.</p>
+<h2 id="toc_61">top 11~20</h2>
+<p>이하 모듈도 의존성 100 이상의 모듈들로 그 인기와 사용성이 높기 때문에 시간이 된다면 함께 살펴보면 좋습니다.</p>
+<ul>
+<li>socket.io : 웹 소켓 모듈</li>
+<li>redis : redis 클라이언트 모듈</li>
+<li>jade : 템플릿 엔진 모듈</li>
+<li>mime : mime 타입 모듈</li>
+<li>mkdirp : mkdir 확장 모듈</li>
+<li>jsdom : 서버측 DOM 모듈</li>
+<li>node-uuid : 유니크 아이디 생성 모듈</li>
+<li>mongodb : mongoDB 클라이언트 모듈</li>
+<li>stylus : 다이나믹 스타일시트 언어 파싱 모듈</li>
+<li>pkginfo : 노드 모듈 정보를 확인하기 위한 모듈</li>
+<li>ejs : 템플릿 엔진 모듈</li>
+<li>less : 다이나믹 스타일시트 언어 파싱 모듈</li>
+<li>winston : 비동기 로깅 모듈</li>
+<li>mongoose : mongoDB 클라이언트 모듈</li>
+<li>xml2js : XML/JSON 변환 모듈</li>
+</ul>
+
+                        </div>
+                        <hr />
+                                            
+                        <div class="row-fluid">
+                            
+
+                            
+                            <div class="pull-left">
+                                <a href="/post/nodeconf-2012-2day" class="btn btn-inverse"><i class="icon-white icon-chevron-left"></i> NodeConf 2012 2 Day 요약</a>
+                            </div>
+                            
+                        </div>
+                    
+
+
+                        <div class="row-fluid">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nodekr'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <!--<div class="row">-->
+        <!--<div class="offset3 span9">-->
+            <!--<strong>tags</strong> :-->
+            <!---->
+        <!--</div>-->
+    <!--</div>-->
+</div><!-- /container -->
+
+
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span12 ">
+                    <div class="well">
+                        <p class="pull-right"><a href="#">Back to top</a></p>
+                            Contact <a href="mailto:rhio.kim@gmail.com">rhio.kim@gmail.com</a><br/>
+                            Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-30492002-1']);
+            _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+    
+</body>
+</html>
